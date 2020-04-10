@@ -9,6 +9,8 @@
 import Foundation
 
 public class GreetingProvider {
+    
+    public init() {}
    
     public func greet(withPrefix prefix: String) -> String {
         return prefix + " Hello!"
