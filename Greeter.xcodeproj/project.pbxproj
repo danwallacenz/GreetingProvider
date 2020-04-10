@@ -10,6 +10,7 @@
 		3C99F14924402DAC00C6637D /* Greeter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C99F13F24402DAC00C6637D /* Greeter.framework */; };
 		3C99F14E24402DAC00C6637D /* GreeterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C99F14D24402DAC00C6637D /* GreeterTests.swift */; };
 		3C99F15024402DAC00C6637D /* Greeter.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C99F14224402DAC00C6637D /* Greeter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C99F15A24402DD400C6637D /* GreetingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C99F15924402DD400C6637D /* GreetingProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		3C99F14824402DAC00C6637D /* GreeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GreeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C99F14D24402DAC00C6637D /* GreeterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreeterTests.swift; sourceTree = "<group>"; };
 		3C99F14F24402DAC00C6637D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3C99F15924402DD400C6637D /* GreetingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			children = (
 				3C99F14224402DAC00C6637D /* Greeter.h */,
 				3C99F14324402DAC00C6637D /* Info.plist */,
+				3C99F15924402DD400C6637D /* GreetingProvider.swift */,
 			);
 			path = Greeter;
 			sourceTree = "<group>";
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					3C99F13E24402DAC00C6637D = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					3C99F14724402DAC00C6637D = {
 						CreatedOnToolsVersion = 11.4;
@@ -195,6 +199,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C99F15A24402DD400C6637D /* GreetingProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +345,7 @@
 		3C99F15424402DAC00C6637D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JP5YDXJS2P;
@@ -356,6 +362,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = nz.co.danwallace.Greeter;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,6 +371,7 @@
 		3C99F15524402DAC00C6637D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = JP5YDXJS2P;
@@ -388,6 +396,7 @@
 		3C99F15724402DAC00C6637D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JP5YDXJS2P;
 				INFOPLIST_FILE = GreeterTests/Info.plist;
@@ -406,6 +415,7 @@
 		3C99F15824402DAC00C6637D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JP5YDXJS2P;
 				INFOPLIST_FILE = GreeterTests/Info.plist;
